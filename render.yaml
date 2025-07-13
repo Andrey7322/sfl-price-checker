@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: sfl-price-checker
+    schedule: "0 */2 * * *"  # Каждые 2 часа
+    runtime: python
+    buildCommand: ""
+    startCommand: "python check_price.py"
